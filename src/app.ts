@@ -1,13 +1,15 @@
-import express, { Application, Request, Response } from "express";
-const app: Application = express();
-const port: Number = 3000;
+import cors from 'cors'
+import express, { Application, Request, Response } from 'express'
 
-app.get("/", (req: Request, res: Response) => {
-  res.send("hellow world");
-});
+const app: Application = express()
 
-app.listen(port, () => {
-  console.log(`UMS listening on port ${port}`);
-});
+app.use(cors())
+app.use(express.json())
+app.use(express.urlencoded({ extended: true }))
 
-export default app;
+//Testing the APP
+app.get('/', (req: Request, res: Response) => {
+  res.send('hellow world')
+})
+
+export default app

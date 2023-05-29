@@ -1,17 +1,18 @@
-import mongoose from "mongoose";
-import app from "./app";
+import mongoose from 'mongoose'
+import app from './app'
+import config from './config/index'
 
-const port: Number = 3000;
 async function RunServer() {
   try {
-    await mongoose.connect("mongodb://127.0.0.1:27017/test");
-    console.log("🛢 Database in connected successfully");
+    console.log(config?.databaseURL)
+    await mongoose.connect(config?.databaseURL as string)
+    console.log('🛢 Database in connected successfully')
 
-    app.listen(port, () => {
-      console.log(`UMS listening on port ${port}`);
-    });
+    app.listen(config?.port, () => {
+      console.log(`UMS listening on port ${config?.port}`)
+    })
   } catch (error) {
-    console.log("Failed to connect database❌", error);
+    console.log('Failed to connect database❌', error)
   }
 }
-RunServer();
+RunServer()
