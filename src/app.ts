@@ -1,5 +1,5 @@
 import cors from 'cors'
-import express, { Application, Request, Response } from 'express'
+import express, { Application, Request } from 'express'
 import userRouter from './app/modules/users/user.route'
 const app: Application = express()
 
@@ -11,7 +11,7 @@ app.use(express.urlencoded({ extended: true }))
 app.use('/api/v1/users', userRouter)
 
 //Testing the APP
-app.get('/', (req: Request, res: Response) => {
+app.get('/', (req: Request, res: any) => {
   res.send('hellow world')
 })
 
