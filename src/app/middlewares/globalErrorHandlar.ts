@@ -22,7 +22,7 @@ const globalErrorHandler: ErrorRequestHandler = (err, req, res, next) => {
     const simplifiedError = handleValidationError(err);
     statusCode = simplifiedError.statusCode;
     message = simplifiedError.message;
-    errorMessage = simplifiedError.errorMeassage;
+    errorMessage = simplifiedError.errorMessage;
   } else if (err instanceof ApiError) {
     statusCode = err?.statusCode;
     message = err?.message;
