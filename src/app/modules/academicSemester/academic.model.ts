@@ -1,4 +1,11 @@
+import httpStatus from 'http-status';
 import { Schema, model } from 'mongoose';
+import ApiError from '../../../errors/ApiError';
+import {
+  academicSemesterCode,
+  academicSemesterMonth,
+  academicSemesterTitles,
+} from './academic.constant';
 import { AcadamicSemesterModel, IAcademicSemester } from './academic.interface';
 
 const academicSchema = new Schema<IAcademicSemester>(
@@ -6,7 +13,7 @@ const academicSchema = new Schema<IAcademicSemester>(
     title: {
       type: String,
       required: true,
-      enum: ['Autumn', 'Summer', 'Fall'],
+      enum: academicSemesterTitles,
     },
     year: {
       type: Number,
@@ -15,49 +22,34 @@ const academicSchema = new Schema<IAcademicSemester>(
     code: {
       type: String,
       required: true,
-      enum: ['01', '02', '03'],
+      enum: academicSemesterCode,
     },
     startMonth: {
       type: String,
       required: true,
-      enum: [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December',
-      ],
+      enum: academicSemesterMonth,
     },
     endMonth: {
       type: String,
       required: true,
-      enum: [
-        'January',
-        'February',
-        'March',
-        'April',
-        'May',
-        'June',
-        'July',
-        'August',
-        'September',
-        'October',
-        'November',
-        'December',
-      ],
+      enum: academicSemesterMonth,
     },
   },
   {
     timestamps: true,
   }
 );
+
+academicSchema.pre('save', async function (next) {
+  const existingSemester = await AcademicSemester.findOne({
+    title: this.title,
+    year: this.year,
+  });
+  if (existingSemester) {
+    throw new ApiError(httpStatus.CONFLICT, 'Academic semester already exists');
+  }
+  next();
+});
 
 export const AcademicSemester = model<IAcademicSemester, AcadamicSemesterModel>(
   'AcademicSemester',
