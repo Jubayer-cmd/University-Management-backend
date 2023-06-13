@@ -19,10 +19,13 @@ export type IAcademicCode = '01' | '02' | '03';
 
 export type IAcademicSemester = {
   title: IAcademicSemesterTitle;
-  year: number;
+  year: string;
   code: IAcademicCode;
   startMonth: IAcademicSemesterMonth;
   endMonth: IAcademicSemesterMonth;
 };
 
 export type AcadamicSemesterModel = Model<IAcademicSemester>;
+export type IAcademicSemesterFilter = {
+  searchTerm?: string;
+};
