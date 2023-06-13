@@ -1,14 +1,15 @@
-import { NextFunction, Request, RequestHandler, Response } from 'express';
+import { Request, RequestHandler, Response } from 'express';
 import httpStatus from 'http-status';
-import { paginationFields } from '../../../Constants/pagination';
+
 import pick from '../../../shared/pick';
 import sendResponse from '../../../shared/sendResponse';
+import paginationFields from './../../../Constants/pagination';
 import catvhAsync from './../../../shared/catchAsync';
 import { AcademicSemesterService } from './acadedmicSemester.service';
 import { IAcademicSemester } from './academic.interface';
 
 const createSemester: RequestHandler = catvhAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const { ...academicSemesterData } = req.body;
     const result = await AcademicSemesterService.createSemester(
       academicSemesterData
@@ -20,13 +21,11 @@ const createSemester: RequestHandler = catvhAsync(
       message: 'Successfully create a Academic Semester',
       data: result,
     });
-
-    next();
   }
 );
 
 const getAllSemester: RequestHandler = catvhAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const filters = pick(req.query, ['searchTerm', 'title', 'code', 'year']);
 
     const pagignationOptions = pick(req.query, paginationFields);
@@ -42,13 +41,11 @@ const getAllSemester: RequestHandler = catvhAsync(
       meta: result?.meta,
       data: result?.data,
     });
-
-    next();
   }
 );
 
 const getSingleSemester: RequestHandler = catvhAsync(
-  async (req: Request, res: Response, next: NextFunction) => {
+  async (req: Request, res: Response) => {
     const id = req.params.id;
     const result = await AcademicSemesterService.getSingleSemester(id);
 
@@ -58,8 +55,34 @@ const getSingleSemester: RequestHandler = catvhAsync(
       message: 'Successfully fetched Academic Semester',
       data: result,
     });
+  }
+);
 
-    next();
+const updateSemester: RequestHandler = catvhAsync(
+  async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const updateData = req.body;
+    const result = await AcademicSemesterService.updateSemester(id, updateData);
+    sendResponse<IAcademicSemester>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Successfully update Academic Semester',
+      data: result,
+    });
+  }
+);
+
+const deleteSemester: RequestHandler = catvhAsync(
+  async (req: Request, res: Response) => {
+    const id = req.params.id;
+    const result = await AcademicSemesterService.deleteSemester(id);
+
+    sendResponse<IAcademicSemester>(res, {
+      statusCode: httpStatus.OK,
+      success: true,
+      message: 'Successfully deleted Academic Semester',
+      data: result,
+    });
   }
 );
 
@@ -67,4 +90,6 @@ export const AcademicController = {
   createSemester,
   getAllSemester,
   getSingleSemester,
+  updateSemester,
+  deleteSemester,
 };
