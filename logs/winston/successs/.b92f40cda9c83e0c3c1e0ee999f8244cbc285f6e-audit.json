@@ -64,6 +64,16 @@
             "date": 1686658452851,
             "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\successs\\ums-2023-13-06-18-success.log",
             "hash": "300f99b759a2c0e6c551ae39312fe8b1fbc4931b911039c516de1f9ec606ef4a"
+        },
+        {
+            "date": 1686706043387,
+            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\successs\\ums-2023-14-06-07-success.log",
+            "hash": "db4ae46b9b4a6e15ac7aac425d3a923c6cfc558f79fb2489cd9a140180fc4a7d"
+        },
+        {
+            "date": 1686708071640,
+            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\successs\\ums-2023-14-06-08-success.log",
+            "hash": "c324803acfc9038c37ae8be0fb832a58ff63651a879a372bd2917e08bd608fd5"
         }
     ],
     "hashType": "sha256"
