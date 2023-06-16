@@ -1,6 +1,6 @@
 import { NextFunction, Request, RequestHandler, Response } from 'express';
 
-const catvhAsync =
+const catchAsync =
   (fn: RequestHandler) => (req: Request, res: Response, next: NextFunction) => {
     try {
       fn(req, res, next);
@@ -9,4 +9,4 @@ const catvhAsync =
     }
   };
 
-export default catvhAsync;
+export default catchAsync;

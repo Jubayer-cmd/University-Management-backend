@@ -1,21 +1,22 @@
 import { Request, RequestHandler, Response } from 'express';
 import httpStatus from 'http-status';
-import catvhAsync from '../../../shared/catchAsync';
+import catchAsync from '../../../shared/catchAsync';
 import sendResponse from '../../../shared/sendResponse';
+import { IUser } from './user.interface';
 import { UserService } from './user.service';
 
-const createUsers: RequestHandler = catvhAsync(
+const createStudent: RequestHandler = catchAsync(
   async (req: Request, res: Response) => {
-    const { ...userData } = req.body;
-    const result = await UserService.createUser(userData);
+    const { student, ...userData } = req.body;
+    const result = await UserService.createStudent(student, userData);
 
-    sendResponse(res, {
+    sendResponse<IUser>(res, {
       statusCode: httpStatus.OK,
       success: true,
-      message: 'Successfully create a user',
+      message: 'user created successfully!',
       data: result,
     });
   }
 );
 
-export const UserController = { createUsers };
+export const UserController = { createStudent };
