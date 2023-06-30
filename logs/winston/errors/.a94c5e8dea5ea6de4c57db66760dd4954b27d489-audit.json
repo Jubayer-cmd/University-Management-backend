@@ -14,6 +14,11 @@
             "date": 1688119749944,
             "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-30-06-16-error.log",
             "hash": "3b065a46b6e41de64703c6469f0f57671275ecfc29e7ac2cdd19367edbcee95c"
+        },
+        {
+            "date": 1688122932074,
+            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-30-06-17-error.log",
+            "hash": "948d1092235b5322931ffc0186f23831ad2aad9bced2b5b87d9d2804c6c2c707"
         }
     ],
     "hashType": "sha256"

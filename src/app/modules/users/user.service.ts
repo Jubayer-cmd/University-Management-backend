@@ -17,6 +17,7 @@ import {
   generateFacultyId,
   generateStudentId,
 } from './user.utils';
+
 const createStudent = async (
   student: IStudent,
   user: IUser
@@ -25,6 +26,8 @@ const createStudent = async (
   if (!user.password) {
     user.password = config.default_student_pass as string;
   }
+
+  //doing hash password
 
   // set role
   user.role = 'student';
