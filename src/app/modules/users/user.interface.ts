@@ -9,4 +9,5 @@ export type IUser = {
   faculty?: Types.ObjectId;
   admin?: Types.ObjectId;
 };
+
 export type UserModel = Model<IUser, Record<string, unknown>>;

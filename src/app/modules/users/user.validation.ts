@@ -1,4 +1,4 @@
-import { z } from 'Zod';
+import { z } from 'zod';
 import { bloodGroup, gender } from '../student/student.constant';
 
 const createUserZodSchema = z.object({

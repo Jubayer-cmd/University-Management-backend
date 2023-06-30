@@ -6,7 +6,7 @@ import { Error } from 'mongoose';
 import config from '../../config';
 import ApiError from '../../errors/ApiError';
 
-import { ZodError } from 'Zod';
+import { ZodError } from 'zod';
 import handleCastError from '../../errors/handleCastError';
 import handleZodError from '../../errors/handleZodError';
 

@@ -1,3 +1,0 @@
-Tue Jun 13 2023 8:5:8 [UMS!] error: Cast to ObjectId failed for value "6486d32022b61d9" (type string) at path "_id" for model "AcademicSemester"
-Tue Jun 13 2023 8:10:15 [UMS!] error: Cast to ObjectId failed for value "6486d32022b61d9" (type string) at path "_id" for model "AcademicSemester"
-Tue Jun 13 2023 8:13:41 [UMS!] error: Cast to ObjectId failed for value "dadfadfadfads" (type string) at path "_id" for model "AcademicSemester"

@@ -12,6 +12,12 @@ app.use(express.urlencoded({ extended: true }));
 
 app.use('/api/v1', router);
 
+//Testing
+// app.get('/', async (req: Request, res: Response, next: NextFunction) => {
+//   throw new Error('Testing Error logger')
+// })
+
+//global error handler
 app.use(globalErrorHandler);
 
 //handle not found
@@ -28,9 +34,4 @@ app.use((req: Request, res: Response, next: NextFunction) => {
   });
   next();
 });
-//Testing the APP
-app.get('/', (req: Request, res: Response) => {
-  res.send('hellow world');
-});
-
 export default app;

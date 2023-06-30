@@ -1,5 +1,0 @@
-Tue Jun 13 2023 7:39:49 [UMS!] error: unknown operator: $and
-Tue Jun 13 2023 7:44:8 [UMS!] error: unknown operator: $and
-Tue Jun 13 2023 7:44:44 [UMS!] error: unknown operator: $and
-Tue Jun 13 2023 7:54:22 [UMS!] error: Cast to ObjectId failed for value "6486d32022b61d9a1c6d8a25s" (type string) at path "_id" for model "AcademicSemester"
-Tue Jun 13 2023 7:55:13 [UMS!] error: Cast to ObjectId failed for value "6486d32022b61d9" (type string) at path "_id" for model "AcademicSemester"

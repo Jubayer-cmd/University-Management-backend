@@ -6,74 +6,9 @@
     "auditLog": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\.a94c5e8dea5ea6de4c57db66760dd4954b27d489-audit.json",
     "files": [
         {
-            "date": 1686143969063,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-07-06-19-error.log",
-            "hash": "70536eace9fcb36d15718bd300ec9d35dc81a32b42373461a0ace00c048a59bc"
-        },
-        {
-            "date": 1686147621696,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-07-06-20-error.log",
-            "hash": "d9af00b6d07c0e276cace1d5e32b6e9b7dc37c3765d257b2597a6e4865b86a50"
-        },
-        {
-            "date": 1686150096526,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-07-06-21-error.log",
-            "hash": "3c5c7ee8e130bcb34ffc2ce12448f13aecf51e1a1a89fd32df15c6df7431de5e"
-        },
-        {
-            "date": 1686188901687,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-08-06-07-error.log",
-            "hash": "c78fa172f105fb63418498f33227c958be4b59ec15d3ae048f831847587ccfb2"
-        },
-        {
-            "date": 1686189697385,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-08-06-08-error.log",
-            "hash": "e9f710754bdb1d6929dbe0bf0635b42635411fb4e35f3f1e67ade75dae2180fc"
-        },
-        {
-            "date": 1686367445881,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-10-06-09-error.log",
-            "hash": "eff4eebf436e7a8c4bb30fe26cb4ed929b98790c0539fa80b14bf87ec384b9c1"
-        },
-        {
-            "date": 1686570685504,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-12-06-17-error.log",
-            "hash": "bffb6470136a9ed925967f5cd994de36591ba46e9e3e5ff50b80757845eb98cb"
-        },
-        {
-            "date": 1686614936559,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-13-06-06-error.log",
-            "hash": "c7ec61467f9769593848e51846273880736fc8e36d56d0338e888ce40f05fbf5"
-        },
-        {
-            "date": 1686618063217,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-13-06-07-error.log",
-            "hash": "fbed6e632129835a65aea5495833c77a0ac79623921b689cf4e0d473c2035f47"
-        },
-        {
-            "date": 1686621872285,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-13-06-08-error.log",
-            "hash": "fceb12579881829cf184e567f93ca76128a012f09dc62bef5ea97e58dd5483a5"
-        },
-        {
-            "date": 1686654687772,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-13-06-17-error.log",
-            "hash": "26cbe8cc4da264c60196743385025ce6e9136df29cea4dc6114f4540c3b0d9de"
-        },
-        {
-            "date": 1686658452860,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-13-06-18-error.log",
-            "hash": "63ee19ec6ed7c09ef4889f473383138fe69743893ef138b326113ec02dc6cd70"
-        },
-        {
-            "date": 1686706043405,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-14-06-07-error.log",
-            "hash": "69828302c0f5de3b318190eed0f816b66c466d55900dfea3dae6a6dbaa4ec16a"
-        },
-        {
-            "date": 1686708071652,
-            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-14-06-08-error.log",
-            "hash": "b837838ea38c017f83aae2f4bfd6521afb0696ba57daabba251128f39ea80a5f"
+            "date": 1688115782505,
+            "name": "D:\\z Web developmentProject level 2\\University-Management-backend\\logs\\winston\\errors\\ums-2023-30-06-15-error.log",
+            "hash": "bbd5f22d0b277cb350aafedc7137a203374d2106793b403b1c357f47ea13e73e"
         }
     ],
     "hashType": "sha256"

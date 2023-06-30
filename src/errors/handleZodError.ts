@@ -1,4 +1,4 @@
-import { ZodError, ZodIssue } from 'Zod';
+import { ZodError, ZodIssue } from 'zod';
 import { IGenericErrorResponse } from '../app/interfaces/common';
 import { IGenericErrorMessage } from '../app/interfaces/errot';
 
