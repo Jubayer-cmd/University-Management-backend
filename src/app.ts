@@ -1,12 +1,13 @@
+import cookieParser from 'cookie-parser';
 import cors from 'cors';
 import express, { Application, NextFunction, Request, Response } from 'express';
 import httpStatus from 'http-status';
 import router from './app/Routes/routes';
 import globalErrorHandler from './app/middlewares/globalErrorHandlar';
-
 const app: Application = express();
 
 app.use(cors());
+app.use(cookieParser());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

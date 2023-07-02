@@ -1,0 +1,5 @@
+Sat Jul 01 2023 17:11:28 [UMS!] error: Cast to ObjectId failed for value "2154654" (type string) at path "_id" for model "AcademicSemester"
+Sat Jul 01 2023 17:13:19 [UMS!] error: Cannot read properties of null (reading 'year')
+Sat Jul 01 2023 17:13:56 [UMS!] error: Cannot read properties of null (reading 'year')
+Sat Jul 01 2023 17:19:49 [UMS!] error: Cannot read properties of null (reading 'year')
+Sat Jul 01 2023 17:22:28 [UMS!] error: Cannot read properties of null (reading 'year')
